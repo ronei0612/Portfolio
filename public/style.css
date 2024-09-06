@@ -1,0 +1,17 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.jumbotron {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.jumbotron .lead {
+    font-weight: bold;
+}
+
+.img-fluid {
+    max-width: 200px;
+    height: auto;
+}
