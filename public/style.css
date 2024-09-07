@@ -1,5 +1,7 @@
 body {
     font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
 }
 
 .jumbotron {
@@ -14,4 +16,27 @@ body {
 .img-fluid {
     max-width: 200px;
     height: auto;
+}
+
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header img {
+    max-width: 150px;
+    height: auto;
+}
+
+h1, h2 {
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.row img {
+    margin-bottom: 10px;
 }
