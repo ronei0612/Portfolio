@@ -1,117 +1,118 @@
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #000;
-    color: #fff;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header {
-    background-color: #000;
-    padding: 20px 0;
-  }
-  
-  nav {
-    text-align: center;
-  }
-  
-  nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav li {
-    display: inline-block;
-    margin: 0 10px;
-  }
-  
-  nav a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .hero {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 50px;
-  }
-  
-  .hero-content {
-    text-align: center;
-  }
-  
-  .hero-content h1 {
-    font-size: 3em;
-    margin-bottom: 10px;
-  }
-  
-  .hero-content p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-  }
-  
-  .download-btn {
-    background-color: #fff;
-    color: #000;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-weight: bold;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  
-  .hero-image {
-    width: 400px;
-    height: auto;
-  }
-  
-  .skills {
-    padding: 50px 0;
-  }
-  
-  .skills-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 0 20px;
-  }
-  
-  .skill {
-    background-color: #111;
-    padding: 20px;
-    border-radius: 10px;
-    width: 200px;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  
-  .skill h2 {
-    margin-bottom: 10px;
-  }
-  
-  .skill p {
-    font-size: 0.9em;
-    line-height: 1.5;
-  }
-  
-  footer {
-    background-color: #111;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  footer p {
-    margin: 0;
-    font-size: 0.8em;
-  }
+  font-family: 'Arial', sans-serif;
+  background-color: #000;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
 
-  .hero-image {
-    width: 700px;
-    height: auto;
-    -webkit-mask-image: linear-gradient(to right, transparent -1%, #00F5CB, transparent 100%);
-    transform: scaleX(-1);
-  }
+header {
+  background-color: #000;
+  padding: 20px 0;
+}
+
+nav {
+  text-align: center;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  padding: 50px;
+  position: relative;
+}
+
+.hero-content {
+  text-align: center;
+  margin-right: 700px; /* Espaço para a imagem */
+}
+
+.hero-content h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.download-btn {
+  background-color: #fff;
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.hero-image {
+  width: 700px;
+  height: auto;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%) scaleX(-1);
+  -webkit-mask-image: linear-gradient(to right, transparent -1%, #00F5CB, transparent 100%);
+  
+}
+
+.skills {
+  padding: 50px 0;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.skill {
+  background-color: #111;
+  padding: 20px;
+  border-radius: 10px;
+  width: 200px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.skill h2 {
+  margin-bottom: 10px;
+}
+
+.skill p {
+  font-size: 0.9em;
+  line-height: 1.5;
+}
+
+footer {
+  background-color: #111;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.8em;
+}
