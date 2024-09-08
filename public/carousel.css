@@ -106,6 +106,17 @@ body {
   background-color: #21222C;
 }
 
-#myCarousel {
-  background-color: #21222C;
+.download-btn {
+  background-color: #59B3E9; /* Nova cor de fundo */
+  color: #000; /* Cor do texto */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.download-btn:hover {
+  background-color: #70C5F7; /* Cor mais clara */
 }
