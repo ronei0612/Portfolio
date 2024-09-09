@@ -5,7 +5,7 @@
 body {
     padding-top: 3rem;
     padding-bottom: 3rem;
-    color: #5a5a5a;
+    color: #fff;
   }
   
   
@@ -119,4 +119,41 @@ body {
 
 .download-btn:hover {
   background-color: #70C5F7; /* Cor mais clara */
+}
+
+.animate-text {
+  opacity: 0;
+  animation: text-animation 2s ease-in-out forwards; /* Animação com duração de 2s */
+}
+
+@keyframes text-animation {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px); /* Move o texto para fora da tela */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0); /* Volta o texto para a posição normal */
+  }
+}
+
+.animate-text1 {
+  opacity: 0;
+  animation: text-animation1 1s ease-in-out forwards; /* 1s de duração, com efeito "ease-in-out" */
+  animation-delay: 2s;
+  transform: translateY(0); /* Move o texto para fora da tela para cima */
+  color: #16a085;
+  font-weight: bold;
+  /* animation-iteration-count: infinite; */
+}
+
+@keyframes text-animation1 {
+  0% {
+    opacity: 0; 
+    transform: translateY(0); /* Move o texto para fora da tela para cima */
+  }
+  100% {
+    opacity: 1; 
+    transform: translateY(0); /* Volta o texto para a posição normal */
+  }
 }
