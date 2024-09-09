@@ -189,3 +189,25 @@ h3.animate-text {
     transform: translateY(0); /* Volta o texto para a posição normal */
   }
 }
+.album {
+  position: relative;
+  width: 200px; /* Largura do grupo de imagens */
+}
+
+.album-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(-5deg);
+}
+
+.album-image:nth-child(2) {
+  top: 10px;
+  left: 190px;
+  transform: rotate(5deg);
+}
+
+.album-image:nth-child(3) {
+  top: 20px;
+  transform: rotate(-10deg);
+}
