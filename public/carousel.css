@@ -54,6 +54,15 @@ body {
   }
   /* rtl:end:ignore */
 
+  .apresentation {
+    min-height: 400px;
+    top: 10px!important;
+    width: 100%;
+    background-color:#282A36;
+    background-image: url('./Screenshot_9.png');
+    background-repeat: no-repeat;
+  }
+
 
   /* Featurettes
   ------------------------- */
