@@ -220,3 +220,8 @@ h3.animate-text {
   left: 250px;
   transform: rotate(10deg);
 }
+
+.img-outline {
+  margin-top: 20px;
+  outline: 8px solid #fff;
+}
