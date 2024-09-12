@@ -168,13 +168,13 @@ h3.animate-text {
 
 @keyframes blink-animation {
   0% {
-    opacity: 1; /* Totalmente visível */
+    opacity: 1;
   }
   50% {
-    opacity: 0; /* Totalmente invisível */
+    opacity: 0;
   }
   100% {
-    opacity: 1; /* Totalmente visível */
+    opacity: 1;
   }
 }
 
@@ -224,4 +224,18 @@ h3.animate-text {
 .img-outline {
   margin-top: 20px;
   outline: 8px solid #fff;
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
 }
