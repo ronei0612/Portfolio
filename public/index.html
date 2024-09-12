@@ -14,6 +14,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <link href="style.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
 
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Ronei C. Soares" />
@@ -28,109 +29,111 @@
   <header>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top fundoEscuro">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Ronei C. Soares</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+        <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarCollapse">
+          <a class="navbar-brand" href="#">Ronei C. Soares</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <ul class="navbar-nav mb-2 mb-md-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="#" onclick="scrollToPos(0)">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#skills">Competências</a>
+              <a class="nav-link" onclick="scrollToPos(218)">Competências</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">Sobre mim</a>
+              <a class="nav-link" onclick="scrollToPos(981)">Sobre mim</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#certifications">Certificações</a>
+              <a class="nav-link"onclick="scrollToPos(1418)">Certificações</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#projects">Projetos</a>
+              <a class="nav-link"onclick="scrollToPos(2013)">Projetos</a>
             </li>
           </ul>
-          <div title="GitHub">
-            <a href="https://github.com/ronei0612" target="_blank">
-              <svg class="me-2" height="32" viewBox="0 -3.1 2490.3 2493" width="32" xmlns="http://www.w3.org/2000/svg">
-                <ellipse cx="1245.2" cy="1243.4" fill="#fff" rx="1217.6" ry="1246.5" />
-                <path
-                  d="m1245.2 1.6c-687.6 0-1245.2 557.4-1245.2 1245.1 0 550.2 356.8 1016.9 851.5 1181.5 62.2 11.5 85.1-27 85.1-59.9 0-29.7-1.2-127.8-1.7-231.8-346.4 75.3-419.5-146.9-419.5-146.9-56.6-143.9-138.3-182.2-138.3-182.2-113-77.3 8.5-75.7 8.5-75.7 125 8.8 190.9 128.3 190.9 128.3 111.1 190.4 291.3 135.3 362.3 103.5 11.2-80.5 43.4-135.4 79.1-166.5-276.6-31.5-567.3-138.3-567.3-615.4 0-135.9 48.6-247 128.3-334.2-12.9-31.3-55.5-157.9 12.1-329.4 0 0 104.6-33.5 342.5 127.6 99.3-27.6 205.8-41.4 311.7-41.9 105.8.5 212.4 14.3 311.9 41.9 237.7-161.1 342.1-127.6 342.1-127.6 67.8 171.5 25.1 298.2 12.2 329.5 79.8 87.2 128.1 198.3 128.1 334.2 0 478.2-291.3 583.6-568.6 614.4 44.7 38.6 84.5 114.4 84.5 230.6 0 166.6-1.4 300.7-1.4 341.7 0 33.1 22.4 72 85.5 59.7 494.5-164.8 850.8-631.4 850.8-1181.4 0-687.7-557.5-1245.1-1245.1-1245.1"
-                  fill="#5c6bc0" />
-              </svg>
-            </a>
-          </div>
-          <div title="Linkedin">
-            <a href="https://www.linkedin.com/in/ronei0612" target="_blank">
-              <svg alt="in/ronei0612" class="me-2" enable-background="new 0 0 32 32" height="32px" id="Layer_1"
-                version="1.0" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink">
-                <g>
-                  <circle clip-rule="evenodd" cx="16" cy="16" fill="#007BB5" fill-rule="evenodd" r="16" />
+          <div class="social-network-links d-flex">
+            <div title="GitHub">
+              <a href="https://github.com/ronei0612" target="_blank">
+                <svg class="me-2" height="32" viewBox="0 -3.1 2490.3 2493" width="32" xmlns="http://www.w3.org/2000/svg">
+                  <ellipse cx="1245.2" cy="1243.4" fill="#fff" rx="1217.6" ry="1246.5" />
+                  <path
+                    d="m1245.2 1.6c-687.6 0-1245.2 557.4-1245.2 1245.1 0 550.2 356.8 1016.9 851.5 1181.5 62.2 11.5 85.1-27 85.1-59.9 0-29.7-1.2-127.8-1.7-231.8-346.4 75.3-419.5-146.9-419.5-146.9-56.6-143.9-138.3-182.2-138.3-182.2-113-77.3 8.5-75.7 8.5-75.7 125 8.8 190.9 128.3 190.9 128.3 111.1 190.4 291.3 135.3 362.3 103.5 11.2-80.5 43.4-135.4 79.1-166.5-276.6-31.5-567.3-138.3-567.3-615.4 0-135.9 48.6-247 128.3-334.2-12.9-31.3-55.5-157.9 12.1-329.4 0 0 104.6-33.5 342.5 127.6 99.3-27.6 205.8-41.4 311.7-41.9 105.8.5 212.4 14.3 311.9 41.9 237.7-161.1 342.1-127.6 342.1-127.6 67.8 171.5 25.1 298.2 12.2 329.5 79.8 87.2 128.1 198.3 128.1 334.2 0 478.2-291.3 583.6-568.6 614.4 44.7 38.6 84.5 114.4 84.5 230.6 0 166.6-1.4 300.7-1.4 341.7 0 33.1 22.4 72 85.5 59.7 494.5-164.8 850.8-631.4 850.8-1181.4 0-687.7-557.5-1245.1-1245.1-1245.1"
+                    fill="#5c6bc0" />
+                </svg>
+              </a>
+            </div>
+            <div title="Linkedin">
+              <a href="https://www.linkedin.com/in/ronei0612" target="_blank">
+                <svg alt="in/ronei0612" class="me-2" enable-background="new 0 0 32 32" height="32px" id="Layer_1"
+                  version="1.0" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink">
                   <g>
-                    <rect fill="#FFFFFF" height="14" width="4" x="7" y="11" />
-                    <path
-                      d="M20.499,11c-2.791,0-3.271,1.018-3.499,2v-2h-4v14h4v-8c0-1.297,0.703-2,2-2c1.266,0,2,0.688,2,2v8h4v-7    C25,14,24.479,11,20.499,11z"
-                      fill="#FFFFFF" />
-                    <circle cx="9" cy="8" fill="#FFFFFF" r="2" />
+                    <circle clip-rule="evenodd" cx="16" cy="16" fill="#007BB5" fill-rule="evenodd" r="16" />
+                    <g>
+                      <rect fill="#FFFFFF" height="14" width="4" x="7" y="11" />
+                      <path
+                        d="M20.499,11c-2.791,0-3.271,1.018-3.499,2v-2h-4v14h4v-8c0-1.297,0.703-2,2-2c1.266,0,2,0.688,2,2v8h4v-7    C25,14,24.479,11,20.499,11z"
+                        fill="#FFFFFF" />
+                      <circle cx="9" cy="8" fill="#FFFFFF" r="2" />
+                    </g>
                   </g>
-                </g>
-                <g />
-                <g />
-                <g />
-                <g />
-                <g />
-                <g />
-              </svg>
-            </a>
-          </div>
-          <div title="19987006385">
-            <a href="https://api.whatsapp.com/send?phone=5519987006385" target="_blank">
-              <svg class="me-2" xmlns="http://www.w3.org/2000/svg" version="1.0" width="32px" height="32px"
-                viewBox="0 0 5000 5000" preserveAspectRatio="xMidYMid meet">
-                <link xmlns="" type="text/css" rel="stylesheet" id="dark-mode-custom-link" />
-                <link xmlns="" type="text/css" rel="stylesheet" id="dark-mode-general-link" />
-                <style xmlns="" lang="en" type="text/css" id="dark-mode-custom-style" />
-                <style xmlns="" lang="en" type="text/css" id="dark-mode-native-style" />
-                <style xmlns="" lang="en" type="text/css" id="dark-mode-native-sheet" />
-                <g id="layer101" fill="#000000" stroke="none">
-                </g>
-                <g id="layer102" fill="#02e677" stroke="none">
-                  <path
-                    d="M2256 4879 c-279 -18 -569 -100 -827 -234 -244 -128 -246 -128 -287 -117 -20 5 -89 24 -152 42 -173 48 -337 90 -410 105 -36 8 -91 23 -122 34 -32 12 -69 21 -82 21 -14 0 -36 4 -50 10 -22 8 -28 6 -42 -15 -14 -22 -14 -30 5 -102 11 -43 23 -89 27 -103 10 -42 50 -185 109 -393 77 -269 77 -272 -10 -417 -144 -243 -251 -510 -301 -750 -50 -242 -54 -633 -9 -875 24 -132 109 -433 152 -539 110 -271 277 -519 503 -747 197 -198 419 -358 664 -479 233 -115 402 -170 681 -221 149 -27 470 -37 624 -20 181 21 494 93 595 136 17 7 67 28 111 47 175 72 379 197 550 335 540 435 861 1063 904 1768 32 521 -93 1003 -369 1416 -263 393 -578 676 -965 864 -419 204 -772 267 -1299 234z" />
-                </g>
-                <g id="layer103" fill="#f6fefa" stroke="none">
-                  <path
-                    d="M3175 3834 c-11 -2 -46 -11 -78 -20 -31 -8 -82 -19 -112 -24 -30 -5 -69 -16 -87 -24 -18 -8 -55 -20 -83 -27 -27 -6 -59 -17 -70 -24 -11 -6 -38 -18 -60 -25 -22 -7 -60 -23 -85 -36 -25 -13 -52 -24 -62 -24 -9 0 -24 -7 -33 -16 -9 -9 -31 -22 -48 -28 -27 -10 -93 -44 -147 -77 -8 -5 -31 -18 -51 -28 -19 -11 -41 -27 -48 -35 -8 -9 -20 -16 -27 -16 -8 0 -22 -8 -32 -17 -10 -10 -45 -36 -78 -58 -95 -63 -167 -127 -364 -325 -219 -218 -323 -339 -411 -475 -14 -22 -34 -53 -45 -69 -54 -80 -154 -269 -154 -290 0 -8 -7 -19 -15 -26 -8 -7 -18 -28 -21 -49 -4 -20 -18 -65 -32 -101 -22 -59 -25 -79 -25 -220 -1 -150 1 -158 32 -250 18 -52 39 -102 47 -111 8 -8 14 -19 14 -24 0 -16 91 -145 134 -190 37 -39 64 -58 146 -102 36 -19 242 -18 279 2 38 19 74 63 100 122 13 26 33 71 46 98 13 28 35 75 49 105 14 30 26 61 26 68 0 7 9 30 20 50 51 96 74 167 78 250 3 83 3 84 -35 140 -21 31 -46 64 -55 74 -10 10 -18 21 -18 26 0 4 -20 29 -45 55 -95 99 -90 165 25 332 107 154 248 306 389 420 40 33 84 70 98 83 13 12 28 22 32 22 4 0 16 9 25 19 10 11 32 25 49 32 18 7 39 18 47 25 21 17 140 80 170 89 14 4 31 12 38 18 8 6 43 21 79 34 61 21 66 21 91 6 30 -18 158 -149 224 -229 64 -76 98 -97 162 -96 40 0 68 8 111 31 32 17 63 31 70 31 7 0 18 7 25 15 7 9 32 20 56 26 24 6 49 17 55 25 6 8 30 19 53 25 22 6 52 19 66 29 14 10 39 21 57 24 18 4 42 15 55 25 13 10 37 21 53 25 17 4 42 19 58 34 24 23 27 33 27 92 0 45 -8 89 -25 138 -14 39 -25 78 -25 86 0 24 -83 118 -161 182 -135 111 -286 172 -443 179 -50 2 -100 2 -111 -1z" />
-                </g>
-              </svg>
-            </a>
-          </div>
-          <div title="ronei0612@gmail.com">
-            <a href="mailto:ronei0612@gmail.com">
-              <svg alt="ronei0612@gmail.com" class="me-2" height="32px" style="enable-background:new 0 0 512 512;"
-                version="1.1" viewBox="0 0 512 512" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink">
-                <g id="_x31_12-gmail_x2C__email_x2C__mail">
-                  <g>
+                  <g />
+                  <g />
+                  <g />
+                  <g />
+                  <g />
+                  <g />
+                </svg>
+              </a>
+            </div>
+            <div title="19987006385">
+              <a href="https://api.whatsapp.com/send?phone=5519987006385" target="_blank">
+                <svg class="me-2" xmlns="http://www.w3.org/2000/svg" version="1.0" width="32px" height="32px"
+                  viewBox="0 0 5000 5000" preserveAspectRatio="xMidYMid meet">
+                  <link xmlns="" type="text/css" rel="stylesheet" id="dark-mode-custom-link" />
+                  <link xmlns="" type="text/css" rel="stylesheet" id="dark-mode-general-link" />
+                  <style xmlns="" lang="en" type="text/css" id="dark-mode-custom-style" />
+                  <style xmlns="" lang="en" type="text/css" id="dark-mode-native-style" />
+                  <style xmlns="" lang="en" type="text/css" id="dark-mode-native-sheet" />
+                  <g id="layer101" fill="#000000" stroke="none">
+                  </g>
+                  <g id="layer102" fill="#02e677" stroke="none">
+                    <path
+                      d="M2256 4879 c-279 -18 -569 -100 -827 -234 -244 -128 -246 -128 -287 -117 -20 5 -89 24 -152 42 -173 48 -337 90 -410 105 -36 8 -91 23 -122 34 -32 12 -69 21 -82 21 -14 0 -36 4 -50 10 -22 8 -28 6 -42 -15 -14 -22 -14 -30 5 -102 11 -43 23 -89 27 -103 10 -42 50 -185 109 -393 77 -269 77 -272 -10 -417 -144 -243 -251 -510 -301 -750 -50 -242 -54 -633 -9 -875 24 -132 109 -433 152 -539 110 -271 277 -519 503 -747 197 -198 419 -358 664 -479 233 -115 402 -170 681 -221 149 -27 470 -37 624 -20 181 21 494 93 595 136 17 7 67 28 111 47 175 72 379 197 550 335 540 435 861 1063 904 1768 32 521 -93 1003 -369 1416 -263 393 -578 676 -965 864 -419 204 -772 267 -1299 234z" />
+                  </g>
+                  <g id="layer103" fill="#f6fefa" stroke="none">
+                    <path
+                      d="M3175 3834 c-11 -2 -46 -11 -78 -20 -31 -8 -82 -19 -112 -24 -30 -5 -69 -16 -87 -24 -18 -8 -55 -20 -83 -27 -27 -6 -59 -17 -70 -24 -11 -6 -38 -18 -60 -25 -22 -7 -60 -23 -85 -36 -25 -13 -52 -24 -62 -24 -9 0 -24 -7 -33 -16 -9 -9 -31 -22 -48 -28 -27 -10 -93 -44 -147 -77 -8 -5 -31 -18 -51 -28 -19 -11 -41 -27 -48 -35 -8 -9 -20 -16 -27 -16 -8 0 -22 -8 -32 -17 -10 -10 -45 -36 -78 -58 -95 -63 -167 -127 -364 -325 -219 -218 -323 -339 -411 -475 -14 -22 -34 -53 -45 -69 -54 -80 -154 -269 -154 -290 0 -8 -7 -19 -15 -26 -8 -7 -18 -28 -21 -49 -4 -20 -18 -65 -32 -101 -22 -59 -25 -79 -25 -220 -1 -150 1 -158 32 -250 18 -52 39 -102 47 -111 8 -8 14 -19 14 -24 0 -16 91 -145 134 -190 37 -39 64 -58 146 -102 36 -19 242 -18 279 2 38 19 74 63 100 122 13 26 33 71 46 98 13 28 35 75 49 105 14 30 26 61 26 68 0 7 9 30 20 50 51 96 74 167 78 250 3 83 3 84 -35 140 -21 31 -46 64 -55 74 -10 10 -18 21 -18 26 0 4 -20 29 -45 55 -95 99 -90 165 25 332 107 154 248 306 389 420 40 33 84 70 98 83 13 12 28 22 32 22 4 0 16 9 25 19 10 11 32 25 49 32 18 7 39 18 47 25 21 17 140 80 170 89 14 4 31 12 38 18 8 6 43 21 79 34 61 21 66 21 91 6 30 -18 158 -149 224 -229 64 -76 98 -97 162 -96 40 0 68 8 111 31 32 17 63 31 70 31 7 0 18 7 25 15 7 9 32 20 56 26 24 6 49 17 55 25 6 8 30 19 53 25 22 6 52 19 66 29 14 10 39 21 57 24 18 4 42 15 55 25 13 10 37 21 53 25 17 4 42 19 58 34 24 23 27 33 27 92 0 45 -8 89 -25 138 -14 39 -25 78 -25 86 0 24 -83 118 -161 182 -135 111 -286 172 -443 179 -50 2 -100 2 -111 -1z" />
+                  </g>
+                </svg>
+              </a>
+            </div>
+            <div title="ronei0612@gmail.com">
+              <a href="mailto:ronei0612@gmail.com">
+                <svg alt="ronei0612@gmail.com" class="me-2" height="32px" style="enable-background:new 0 0 512 512;"
+                  version="1.1" viewBox="0 0 512 512" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <g id="_x31_12-gmail_x2C__email_x2C__mail">
                     <g>
                       <g>
-                        <rect height="358.87" style="fill:#F1F5F7;" width="357.904" x="77.045" y="76.565" />
-                        <path d="M256.002,293.738l178.947,141.697v-279.74L256.002,293.738z M256.002,293.738"
-                          style="fill:#DCE6EA;" />
-                        <path
-                          d="M449.861,76.565h-14.912L256.002,218.26L77.045,76.565H62.134      c-24.693,0-44.737,20.094-44.737,44.858v269.152c0,24.759,20.044,44.859,44.737,44.859h14.911v-279.74l178.957,138.014      l178.947-138.047v279.773h14.912c24.699,0,44.742-20.101,44.742-44.859V121.424C494.604,96.66,474.561,76.565,449.861,76.565      L449.861,76.565z M449.861,76.565"
-                          style="fill:#F84437;" />
+                        <g>
+                          <rect height="358.87" style="fill:#F1F5F7;" width="357.904" x="77.045" y="76.565" />
+                          <path d="M256.002,293.738l178.947,141.697v-279.74L256.002,293.738z M256.002,293.738"
+                            style="fill:#DCE6EA;" />
+                          <path
+                            d="M449.861,76.565h-14.912L256.002,218.26L77.045,76.565H62.134      c-24.693,0-44.737,20.094-44.737,44.858v269.152c0,24.759,20.044,44.859,44.737,44.859h14.911v-279.74l178.957,138.014      l178.947-138.047v279.773h14.912c24.699,0,44.742-20.101,44.742-44.859V121.424C494.604,96.66,474.561,76.565,449.861,76.565      L449.861,76.565z M449.861,76.565"
+                            style="fill:#F84437;" />
+                        </g>
                       </g>
                     </g>
                   </g>
-                </g>
-                <g id="Layer_1" />
-              </svg>
-            </a>
+                  <g id="Layer_1" />
+                </svg>
+              </a>
+            </div>
           </div>
-
         </div>
       </div>
     </nav>
@@ -160,10 +163,10 @@
     </div>
 
     <br>
-    <div class="container marketing">
-      <div class="row" id="skills">
+    <section class="container marketing" id="skills">
+      <div class="row align-items-center p-5">
         <div class="col-lg-4 animate-text2">
-          <img class="bd-placeholder-img rounded-circle" width="140" height="140"
+          <img class="bd-placeholder-img rounded-circle mb-3" width="140" height="140"
             src="https://lh3.googleusercontent.com/pw/AP1GczP7i-Ukp9x8p1qVZBCGu0D3NkDizpYC3QeHJ9uGNFQN3pV0YdexZ4s77mNgvWddCaYCHlAVUVYMhkCJe_AeBVW6Sg86hqqRfhSX2BAzpx-F7PdMvAFQ4MbQZxSF7auMCO8V4P2e_cKI-aSpd4gsqwgd-g=w923-h923-s-no-gm?authuser=0">
           <h2>Hard skills</h2>
           <p>.Net, .Net Core, .Net Framework, ASP.Net, C#, SQL, MVC, NoSQL, LINQ, MS SQL Server, MySQL, PostgreSql,
@@ -172,7 +175,7 @@
         </div>
 
         <div class="col-lg-4 animate-text2">
-          <img class="bd-placeholder-img rounded-circle" width="140" height="140"
+          <img class="bd-placeholder-img rounded-circle mb-3" width="140" height="140"
             src="https://lh3.googleusercontent.com/pw/AP1GczMGNd8rKCmNBbtnrG0lM-bxPzXZQLgLWqI3NSdby_cJlia2oOSMskMebfFFosarRBGm3t6PgGLJ-K58AtefGcgWIf5mZjE7aadjOJahmE1BF-xaBu-UjvPxuFdNCvZkSterZNn3VDsWRlN2F4mxpc1Hbw=w923-h923-s-no-gm?authuser=0">
           <h2>Soft skills</h2>
           <p>Proatividade, Criatividade, Adaptabilidade, Comunicação, Iniciativa, Resiliência, Colaboração,
@@ -181,107 +184,108 @@
         </div>
 
         <div class="col-lg-4 animate-text2">
-          <img class="bd-placeholder-img rounded-circle" width="140" height="140"
+          <img class="bd-placeholder-img rounded-circle mb-3" width="140" height="140"
             src="https://lh3.googleusercontent.com/pw/AP1GczOhwh1-R028s8sbAmOKE4OCE58WFVW6_farTUqqZZMcxvL_nT4HxrPM5G2sW-Qm5znzjUdiAbuTwYnKU2IrfSKAggSz0DIGcoT_cbO3KxmXPyWsyHVNxBx5K9a9AZ8dVui8YmyNnzpUXTFyMkJ-ZN8o8w=w923-h923-s-no-gm?authuser=0">
           <h2>Principles</h2>
           <p>Metodologias Ágeis (Agiles), Clean Code, SOLID, Clean Architecture, Design Patterns, Entrega contínua,
             Microsserviços, Boas práticas, Padrões de arquitetura</p>
         </div>
       </div>
-      <div class="container" id="about">
-        <div class="row align-items-center">
-          <div class="col-md-5">
-            <h1>Um pouco mais</h1>
-            <h1>sobre mim</h1>
-          </div>
-          <div class="col-md-7">
-            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
-              <div class="carousel-indicators">
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
-                  aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </section>
+
+    <section class="container" id="about">
+      <div class="row align-items-center">
+        <div class="col-md-5">
+          <h1>Um pouco mais</h1>
+          <h1>sobre mim</h1>
+        </div>
+        <div class="col-md-7">
+          <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <rect width="100%" height="100%" fill="#34495e" />
+                </svg>
+
+                <div class="container">
+                  <div class="carousel-caption" style="bottom: 83%">
+                    <h4>Eu gosto de sair com a família. 👪</h4>
+                    <div class="album">
+                      <img style="width: 250px;"
+                        src="https://lh3.googleusercontent.com/pw/AP1GczORXvF0E7VLIbvKKGuK6ecUt72yI-UgxnBOEH6ystg7FojKq9NezDW9C5nW8Ty9PbsADGcc14Ym2xIgY6QVL5t5Vq-c1U5JZWXHvOsH_DXT4l2iyOYdrqF6k5x4jJVB6q4CkEuxQGsyOlTIHKplV4wiiA=w547-h731-s-no-gm?authuser=0"
+                        class="img-fluid rounded album-image">
+                      <img style="width: 250px;"
+                        src="https://lh3.googleusercontent.com/pw/AP1GczOJcyrY4FuhODm8SdBi5IgL1fQeB09mK8cWiTSKKDVGsTvemmi4Qj8PcOz5tJiFFGD7ppqPcO2sNgaiHXy0GfygOFnUmsewBqFf7N6hoFxEvFh5mRTDwtg2kNFImSWxZ9ajGXCPrf_oPDSuxH0gjGIrPQ=w574-h765-s-no-gm?authuser=0"
+                        class="img-fluid rounded album-image">
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                    aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <rect width="100%" height="100%" fill="#34495e" />
-                  </svg>
 
-                  <div class="container">
-                    <div class="carousel-caption" style="bottom: 83%">
-                      <h4>Eu gosto de sair com a família. 👪</h4>
-                      <div class="album">
-                        <img style="width: 250px;"
-                          src="https://lh3.googleusercontent.com/pw/AP1GczORXvF0E7VLIbvKKGuK6ecUt72yI-UgxnBOEH6ystg7FojKq9NezDW9C5nW8Ty9PbsADGcc14Ym2xIgY6QVL5t5Vq-c1U5JZWXHvOsH_DXT4l2iyOYdrqF6k5x4jJVB6q4CkEuxQGsyOlTIHKplV4wiiA=w547-h731-s-no-gm?authuser=0"
-                          class="img-fluid rounded album-image">
-                        <img style="width: 250px;"
-                          src="https://lh3.googleusercontent.com/pw/AP1GczOJcyrY4FuhODm8SdBi5IgL1fQeB09mK8cWiTSKKDVGsTvemmi4Qj8PcOz5tJiFFGD7ppqPcO2sNgaiHXy0GfygOFnUmsewBqFf7N6hoFxEvFh5mRTDwtg2kNFImSWxZ9ajGXCPrf_oPDSuxH0gjGIrPQ=w574-h765-s-no-gm?authuser=0"
-                          class="img-fluid rounded album-image">
-                      </div>
+              <div class="carousel-item">
+                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <rect width="100%" height="100%" fill="#34495e" />
+                </svg>
+                <div class="container">
+                  <div class="carousel-caption" style="bottom: 83%">
+                    <h4>Também gosto de pets. 🐾</h4>
+                    <div class="album">
+                      <img style="width: 250px;"
+                        src="https://lh3.googleusercontent.com/pw/AP1GczOw-Gmy2csc_-pC3plfvg7zQE12Wy5M0O4FE1jGnPERpGjtuGGmaGvr0pMtl5bl_YPBYCl2jazmGvtL0Z1eCcHrMBbic8dg-RPZj2XvnHVaak83c6Hd_7NO0DkcadcL1je907fUvoTYKnP6Ifc0n7ZGaQ=w692-h923-s-no-gm?authuser=0"
+                        class="img-fluid rounded album-image">
+                      <img style="width: 250px;"
+                        src="https://lh3.googleusercontent.com/pw/AP1GczMRudhH0CYkdnWKjEUEkaKExRoShaLEmBOBErKdDPMvIAQCra67FZp2OEgvDsAH9HMSwHwH7em9oHH-0XDEnjkxCedkicnay7WW7d3fC8MdBpG-3mjwSJkpqSPUYmBD0Nx_VSvJ9FqGb905uU188GYHGQ=w692-h923-s-no-gm?authuser=0"
+                        class="img-fluid rounded album-image">
                     </div>
                   </div>
                 </div>
+              </div>
 
-                <div class="carousel-item">
-                  <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                    aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <rect width="100%" height="100%" fill="#34495e" />
-                  </svg>
-                  <div class="container">
-                    <div class="carousel-caption" style="bottom: 83%">
-                      <h4>Também gosto de pets. 🐾</h4>
-                      <div class="album">
-                        <img style="width: 250px;"
-                          src="https://lh3.googleusercontent.com/pw/AP1GczOw-Gmy2csc_-pC3plfvg7zQE12Wy5M0O4FE1jGnPERpGjtuGGmaGvr0pMtl5bl_YPBYCl2jazmGvtL0Z1eCcHrMBbic8dg-RPZj2XvnHVaak83c6Hd_7NO0DkcadcL1je907fUvoTYKnP6Ifc0n7ZGaQ=w692-h923-s-no-gm?authuser=0"
-                          class="img-fluid rounded album-image">
-                        <img style="width: 250px;"
-                          src="https://lh3.googleusercontent.com/pw/AP1GczMRudhH0CYkdnWKjEUEkaKExRoShaLEmBOBErKdDPMvIAQCra67FZp2OEgvDsAH9HMSwHwH7em9oHH-0XDEnjkxCedkicnay7WW7d3fC8MdBpG-3mjwSJkpqSPUYmBD0Nx_VSvJ9FqGb905uU188GYHGQ=w692-h923-s-no-gm?authuser=0"
-                          class="img-fluid rounded album-image">
-                      </div>
+              <div class="carousel-item">
+                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <rect width="100%" height="100%" fill="#34495e" />
+                </svg>
+                <div class="container">
+                  <div class="carousel-caption" style="bottom: 83%">
+                    <h4>Tenho gosto em ajudar pessoas. ❤️</h4>
+                    <div class="album">
+                      <img style="width: 300px;"
+                        src="https://lh3.googleusercontent.com/pw/AP1GczPH7YOMGCIFzqSsn2ezN4NvmP81l-AqTTT8RbRrsAFvGDd732dIEqr32GGo_LQ5al9vTDgsay4NwSDjQUvfKVVWL9o9O_wnOLCLhgUtJO4LrY1bCT8DYWf_gaLq1o5W0KhUOoJOkXoTh08OVMnOeRgQrg=w1020-h765-s-no-gm?authuser=0"
+                        class="img-fluid rounded album-image">
+                      <img class="img-fluid rounded album-image">
+                      <img style="width: 300px;"
+                        src="https://lh3.googleusercontent.com/pw/AP1GczNrKcdVYqyiJxjJamXgEFKl7QbfxP728hq_h4psj8LDkU4F0iB3Ldf9aPrskgH8Q7K28nAE-YsEaKwmxTl8W_RstL9No60Y84yI132rPNo0gQAVGIygOwMMWYcYebRfbM5U85BwqfMYHXmfw4RFWsppFA=w1000-h576-s-no-gm?authuser=0"
+                        class="img-fluid rounded album-image">
                     </div>
                   </div>
                 </div>
+              </div>
 
-                <div class="carousel-item">
-                  <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                    aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <rect width="100%" height="100%" fill="#34495e" />
-                  </svg>
-                  <div class="container">
-                    <div class="carousel-caption" style="bottom: 83%">
-                      <h4>Tenho gosto em ajudar pessoas. ❤️</h4>
-                      <div class="album">
-                        <img style="width: 300px;"
-                          src="https://lh3.googleusercontent.com/pw/AP1GczPH7YOMGCIFzqSsn2ezN4NvmP81l-AqTTT8RbRrsAFvGDd732dIEqr32GGo_LQ5al9vTDgsay4NwSDjQUvfKVVWL9o9O_wnOLCLhgUtJO4LrY1bCT8DYWf_gaLq1o5W0KhUOoJOkXoTh08OVMnOeRgQrg=w1020-h765-s-no-gm?authuser=0"
-                          class="img-fluid rounded album-image">
-                        <img class="img-fluid rounded album-image">
-                        <img style="width: 300px;"
-                          src="https://lh3.googleusercontent.com/pw/AP1GczNrKcdVYqyiJxjJamXgEFKl7QbfxP728hq_h4psj8LDkU4F0iB3Ldf9aPrskgH8Q7K28nAE-YsEaKwmxTl8W_RstL9No60Y84yI132rPNo0gQAVGIygOwMMWYcYebRfbM5U85BwqfMYHXmfw4RFWsppFA=w1000-h576-s-no-gm?authuser=0"
-                          class="img-fluid rounded album-image">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="carousel-item">
-                  <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                    aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <rect width="100%" height="100%" fill="#34495e" />
-                  </svg>
-                  <div class="container">
-                    <div class="carousel-caption" style="bottom: 83%">
-                      <h4>Já disse que sou músico? 🎼</h4>
-                      <div class="album">
-                        <img style="width: 200px;"
-                          src="https://lh3.googleusercontent.com/pw/AP1GczOVWZypn_hoNMAuYYNUSOH6jbE8ogrlrh5uhd4zAD4jqpF18DEFBlCk1CD3hH_u-b5E3BUEC3PqbHstHfVcu3b-6nBsG0PJgYG3cAM67w-8SxyTOSW3LtuSjB5HAi99Km2oe9mcoW8K9GTyZ7N1qLgysA=w411-h731-s-no-gm?authuser=0"
-                          class="img-fluid rounded album-image">
-                        <img style="width: 200px;"
-                          src="https://lh3.googleusercontent.com/pw/AP1GczNXWHpfPwykcvNvB4C7D1TIgR7GFkPJq4ZHEQrzQJf9pNaOXHh2oRick_W84Uy62Zc-aiOUwAtitKqs-1l03ES8A7KQgL49fkb5w1qKjy5DDkxagTAGHBhK-H1208WLAzo5uI6zIC_iY83MJmGWbuUYSw=w411-h731-s-no-gm?authuser=0"
-                          class="img-fluid rounded album-image">
-                      </div>
+              <div class="carousel-item">
+                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <rect width="100%" height="100%" fill="#34495e" />
+                </svg>
+                <div class="container">
+                  <div class="carousel-caption" style="bottom: 83%">
+                    <h4>Já disse que sou músico? 🎼</h4>
+                    <div class="album">
+                      <img style="width: 200px;"
+                        src="https://lh3.googleusercontent.com/pw/AP1GczOVWZypn_hoNMAuYYNUSOH6jbE8ogrlrh5uhd4zAD4jqpF18DEFBlCk1CD3hH_u-b5E3BUEC3PqbHstHfVcu3b-6nBsG0PJgYG3cAM67w-8SxyTOSW3LtuSjB5HAi99Km2oe9mcoW8K9GTyZ7N1qLgysA=w411-h731-s-no-gm?authuser=0"
+                        class="img-fluid rounded album-image">
+                      <img style="width: 200px;"
+                        src="https://lh3.googleusercontent.com/pw/AP1GczNXWHpfPwykcvNvB4C7D1TIgR7GFkPJq4ZHEQrzQJf9pNaOXHh2oRick_W84Uy62Zc-aiOUwAtitKqs-1l03ES8A7KQgL49fkb5w1qKjy5DDkxagTAGHBhK-H1208WLAzo5uI6zIC_iY83MJmGWbuUYSw=w411-h731-s-no-gm?authuser=0"
+                        class="img-fluid rounded album-image">
                     </div>
                   </div>
                 </div>
@@ -290,7 +294,9 @@
           </div>
         </div>
       </div>
+    </section>
 
+    <section class="container">
       <div class="row featurette" id="certifications">
         <div class="col-md-7 order-md-2">
           <h1>Minha Formação Acadêmica e Cursos</h1>
@@ -319,50 +325,47 @@
       </div>
 
       <hr class="featurette-divider">
+    </section>
 
-      <section class="section-padding" id="projects">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <h1 class="section-title text-center">Meus projetos pessoais</h1>
-            </div>
+
+    <section class="section-padding" id="projects">
+      <div class="container mb-5">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="section-title text-center mb-4">Meus projetos pessoais</h1>
           </div>
-          <div class="row justify-content-center">
-            <div class="col-md-4">
-              <div class="card">
-                <img class="card-img-top"
-                  src="https://lh3.googleusercontent.com/pw/AP1GczPYV6GzO0PF536VkPTV2Hm541_Y9La6d0wvAer_Wt9RTTA51WNPci_a3nTTGdSfjFk-anWjiZPStn6YpV4QPpiWNBQkn4twwgJSfFbAViGdoTis7__nz_US3x8FEOwfozbjQBX50xoIm8ny4jSkeRzPGw=w436-h441-s-no-gm?authuser=0">
-                <div class="card-body">
-                  <h5 class="card-title">PDFTools</h5>
-                  <p class="card-text">Ferramenta gratuita para manipular arquivos PDF.</p>
-                  <a href="https://drive.google.com/file/d/1CSchP9r6HJwUwRGXkSnvFX8ue3OsUoN5/view?usp=sharing"
-                    target="_blank" class="btn btn-primary">Download</a>
-                </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-4">
+            <div class="card">
+              <img class="card-img-top"
+                src="https://lh3.googleusercontent.com/pw/AP1GczPYV6GzO0PF536VkPTV2Hm541_Y9La6d0wvAer_Wt9RTTA51WNPci_a3nTTGdSfjFk-anWjiZPStn6YpV4QPpiWNBQkn4twwgJSfFbAViGdoTis7__nz_US3x8FEOwfozbjQBX50xoIm8ny4jSkeRzPGw=w436-h441-s-no-gm?authuser=0">
+              <div class="card-body">
+                <h5 class="card-title">PDFTools</h5>
+                <p class="card-text">Ferramenta gratuita para manipular arquivos PDF.</p>
+                <a href="https://drive.google.com/file/d/1CSchP9r6HJwUwRGXkSnvFX8ue3OsUoN5/view?usp=sharing"
+                  target="_blank" class="btn btn-primary">Download</a>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="card">
-                <img class="card-img-top"
-                  src="https://lh3.googleusercontent.com/pw/AP1GczNi-3KRWg4PUhn9iSjiKq2hDIpVViKn6ifeQGnkJeDABe3R4D7KLoGw_-udXWI59ULt_cLv-MnuEmzrLWgG6-qfK2UhMyp0AGXEDDsxyVuP7zk5Y-wN7Z06DWWQph-PeIMCNisJ4O-IoR7d5NthLgXjfQ=w418-h417-s-no-gm?authuser=0">
-                <div class="card-body">
-                  <h5 class="card-title">Liturgia Órgão</h5>
-                  <p class="card-text">Aplicativo Web gratuito para tocar instrumentos.</p>
-                  <a href="http://liturgia.somee.com/orgao" target="_blank" class="btn btn-primary">Visitar</a>
-                </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img class="card-img-top"
+                src="https://lh3.googleusercontent.com/pw/AP1GczNi-3KRWg4PUhn9iSjiKq2hDIpVViKn6ifeQGnkJeDABe3R4D7KLoGw_-udXWI59ULt_cLv-MnuEmzrLWgG6-qfK2UhMyp0AGXEDDsxyVuP7zk5Y-wN7Z06DWWQph-PeIMCNisJ4O-IoR7d5NthLgXjfQ=w418-h417-s-no-gm?authuser=0">
+              <div class="card-body">
+                <h5 class="card-title">Liturgia Órgão</h5>
+                <p class="card-text">Aplicativo Web gratuito para tocar instrumentos.</p>
+                <a href="http://liturgia.somee.com/orgao" target="_blank" class="btn btn-primary">Visitar</a>
               </div>
             </div>
           </div>
         </div>
-      </section>
-
-    </div>
-
-    <footer class="footer" style="background-color: #21222C;padding-bottom: 0.5px;">
-      <div class="container text-center">
-        <p>© 2024 Ronei - Developer</p>
       </div>
-    </footer>
+    </section>
 
+    <footer class="footer">
+      © 2024 Ronei - Developer
+    </footer>
   </main>
 
 
@@ -375,6 +378,7 @@
     });
   </script>
 
+  <script src="./scripts.js"></script>
 </body>
 
 </html>
