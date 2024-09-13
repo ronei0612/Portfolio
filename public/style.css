@@ -250,3 +250,9 @@ h3.animate-text {
   background-color: #21222C;
   text-align: center;
 }
+
+@media (max-width: 860px) {
+  .presentation-image {
+    display: none;
+  }
+}
