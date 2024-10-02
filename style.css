@@ -65,7 +65,7 @@ body {
 
 
   .featurette-divider {
-    margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+    margin: 5rem 0 2rem; /* Space out the Bootstrap <hr> more */
   }
 
   /* Thin out the marketing headings */
@@ -237,5 +237,22 @@ h3.animate-text {
 @media (min-width: 768px) {
   .bd-placeholder-img-lg {
     font-size: 3.5rem;
+  }
+}
+
+.nav-item a { 
+  cursor: pointer; 
+}
+
+.footer {
+  width: 100%;
+  padding: 10px;
+  background-color: #21222C;
+  text-align: center;
+}
+
+@media (max-width: 860px) {
+  .presentation-image {
+    display: none;
   }
 }
